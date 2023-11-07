@@ -3,9 +3,9 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsInstagram, BsLinkedin, BsYoutube, BsWhatsapp } from "react-icons/bs";
 import { RiTwitterXLine } from "react-icons/ri";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiFillContacts } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
-import { BiSolidContact } from "react-icons/Bi";
+
 
 export default function Footer() {
   let Links = [
@@ -23,14 +23,13 @@ export default function Footer() {
           {/* text  */}
           {/* 1 */}
           <div className="text-white  flex flex-col gap-2 ">
-            
             <h2 className="text-white">Address </h2>
             <p className="flex gap-2 text-[#6b7280] items-center">
               <CiLocationOn />
               123 Street, New York, USA
             </p>
             <p className="flex gap-2 text-[#6b7280] items-center">
-              <BiSolidContact />
+              <AiFillContacts />
               +00 000 00 00
             </p>
             <p className="flex gap-2 text-[#6b7280] items-center">
@@ -114,9 +113,7 @@ export default function Footer() {
           </div>
           {/* 4 */}
           <div className="flex flex-col h-full justify-center  gap-5 ">
-            <p className="text-[18px]  text-[#ffffff] font-bold ">
-              Newsletter
-            </p>
+            <p className="text-[18px]  text-[#ffffff] font-bold ">Newsletter</p>
             <p className="text-[16px] text-[#6b7280]">
               Dolor amet sit justo amet elitr clita ipsum elitr est.
             </p>
